@@ -1,6 +1,6 @@
 [
   {
-    "url": "mfe1",
+    "url": "fe1",
     "name": "Webcomponent 1",
     "id": "wc1",
     "preload": true,
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "url": "mfe1",
+    "url": "fe1",
     "name": "Webcomponent Widget 1",
     "id": "wc1-widget",
     "preload": true,
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "url": "mfe2",
+    "url": "fe2",
     "name": "Webcomponent 2",
     "id": "wc2",
     "preload": true,

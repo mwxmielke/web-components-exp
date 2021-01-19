@@ -4,14 +4,20 @@
     "secure": false,
     "logLevel": "debug"
   },
-  "/mfe1/*": {
+  "/fe1": {
     "target": "http://localhost:4201",
     "secure": false,
-    "logLevel": "debug"
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/fe1": ""
+    }
   },
-  "/mfe2/*": {
+  "/fe2": {
     "target": "http://localhost:4202",
     "secure": false,
-    "logLevel": "debug"
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/fe2": ""
+    }
   }
 }

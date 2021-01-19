@@ -31,7 +31,7 @@ export class AppComponent implements OnInit{
 
     // Standalone mode
     if (environment.standalone) {
-      this.router.navigate(['/wc1/a']);
+      this.router.navigate(['/webcomp1/a']);
     }
 
     // just for demonstration!
