@@ -1,0 +1,17 @@
+{
+  "/api/*": {
+    "target": "http://localhost:4201",
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/mfe1/*": {
+    "target": "http://localhost:4201",
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "/mfe2/*": {
+    "target": "http://localhost:4202",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

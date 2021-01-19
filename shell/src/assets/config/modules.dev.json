@@ -1,0 +1,32 @@
+[
+  {
+    "url": "mfe1",
+    "name": "Webcomponent 1",
+    "id": "wc1",
+    "preload": true,
+    "selector": "wc1-element",
+    "files": [
+      "main.js"
+    ]
+  },
+  {
+    "url": "mfe1",
+    "name": "Webcomponent Widget 1",
+    "id": "wc1-widget",
+    "preload": true,
+    "selector": "wc1-widget",
+    "files": [
+      "main.js"
+    ]
+  },
+  {
+    "url": "mfe2",
+    "name": "Webcomponent 2",
+    "id": "wc2",
+    "preload": true,
+    "selector": "wc2-element",
+    "files": [
+      "main-es2015.js"
+    ]
+  }
+]
