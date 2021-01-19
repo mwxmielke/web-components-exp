@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build:clients": "lerna run build --scope '{wc1,wc2}'",
+    "serve:clients": "lerna run serve:dist --scope '{wc1,wc2}'",
+    "build:serve": "lerna run build:shell --stream && serve -l 4200 shell/dist/shell"
+  }
+}
