@@ -1,9 +1,12 @@
 # web-components-exp
 
+# falls serve noch nicht installiert (use serve anstelle von npx serve)
+npm i serve -g
+
 # Installieren
 npm install
 
-# Initialisieren der Projekte 
+# Initialisieren der Projekte
 npm run bootstrap
 
 # Entwicklung
