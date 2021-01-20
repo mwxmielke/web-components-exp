@@ -9,10 +9,12 @@
         Angular Version: {{ngVersion}}
       </p>
       <div>
-        <a routerLink="a">Route A</a> |
-        <a routerLink="b">Route B</a>
+        <a [routerLink]="[{outlets: {elementA: 'a'}}]"> Route A</a> |
+        <a [routerLink]="[{outlets: {elementA: 'b'}}]"> Route B</a>
+        <!--a routerLink="webcomp1/a">Route A</a> |
+        <a routerLink="webcomp1/b">Route B</a-->
       </div>
     </div>
   </div>
-  <router-outlet></router-outlet>
+  <router-outlet name="elementA"></router-outlet>
 </div>

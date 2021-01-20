@@ -24,14 +24,18 @@ export class AppComponent implements OnInit{
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.navigateByUrl(location.pathname.substr(1));
+
+    this.router.initialNavigation();
+
+    /*this.router.navigateByUrl(location.pathname.substr(1));
     window.addEventListener('popstate', () => {
       this.router.navigateByUrl(location.pathname.substr(1));
-    });
+    });*/
 
     // Standalone mode
     if (environment.standalone) {
-      this.router.navigate(['/webcomp1/a']);
+      // this.router.navigate(['/webcomp1/a']);
+      this.router.navigate([{outlets: {elementA: 'a'}}]);
     }
 
     // just for demonstration!
