@@ -5,7 +5,10 @@
 export const environment = {
   production: false,
   api: 'http://localhost:4200',
-  config: 'assets/config/modules.dev.json'
+  config: {
+    modules: 'assets/config/modules.dev.json',
+    elements: 'assets/config/elements.dev.json',
+  }
 };
 
 /*

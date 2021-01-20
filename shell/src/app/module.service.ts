@@ -19,7 +19,7 @@ export class ModuleService {
   public readonly modules: Observable<Module[]>;
 
   constructor(readonly httpClient: HttpClient) {
-    this.modules = this.httpClient.get<Module[]>(`${environment.config}`).pipe(shareReplay(1));
+    this.modules = this.httpClient.get<Module[]>(`${environment.config.modules}`).pipe(shareReplay(1));
   }
 
   public load({ files, url, selector }: Module, element: HTMLElement): void {

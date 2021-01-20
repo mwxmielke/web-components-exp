@@ -1,0 +1,22 @@
+{
+  "elements": [
+    {
+      "url": "wc1/main.js",
+      "name": "Webcomponent 1",
+      "id": "wc1",
+      "tag": "wc1-element"
+    },
+    {
+      "url": "wc1/main.js",
+      "name": "Webcomponent Widget 1",
+      "id": "wc1-widget",
+      "tag": "wc1-widget"
+    },
+    {
+      "url": "wc2/main-es2015.js",
+      "name": "Webcomponent 2",
+      "id": "wc2",
+      "tag": "wc2-element"
+    }
+  ]
+}
