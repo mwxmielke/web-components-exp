@@ -8,12 +8,12 @@ import { endsWith } from './router.utils';
 import { AComponent } from './a/a.component';
 import { BComponent } from './b/b.component';
 import {Wc1WidgetComponent} from './wc1-widget/wc1-widget.component';
-import {RouterTestingModule} from "@angular/router/testing";
+import {ElementRoutingModule} from './element-routing/element-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    RouterTestingModule.withRoutes([
+    ElementRoutingModule.withRoutes([
       { matcher: endsWith('a'), component: AComponent, outlet: 'elementA'},
       { matcher: endsWith('b'), component: BComponent, outlet: 'elementA'},
     ]),
@@ -35,7 +35,7 @@ import {RouterTestingModule} from "@angular/router/testing";
     AppComponent,
     Wc1WidgetComponent
   ],
-  exports: [RouterTestingModule],
+  exports: [ElementRoutingModule],
 })
 export class AppModule {
   constructor(private injector: Injector) {
